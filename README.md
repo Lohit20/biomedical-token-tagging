@@ -58,7 +58,7 @@ Visit: `http://127.0.0.1:5000` in your browser.
 
 ---
 
-## 💬 Chatbot Interface
+## Chatbot Interface
 
 The chatbot lets users input biomedical text and returns real-time token classification results via:
 
@@ -68,7 +68,7 @@ The chatbot lets users input biomedical text and returns real-time token classif
 
 ---
 
-## 🧾 Logging System
+## Logging System
 
 All predictions are logged into `token_predictions.json` in structured JSON format.
 
@@ -90,7 +90,7 @@ Each log includes:
 
 ---
 
-## ⚙️ Model Loading Example
+## Model Loading Example
 
 ```python
 from transformers import AutoTokenizer, AutoModelForTokenClassification
@@ -101,7 +101,7 @@ model = AutoModelForTokenClassification.from_pretrained("Lohit20/biobert-v1.2-ba
 
 ---
 
-## ⚠️ Limitations & Recommendations
+## Limitations & Recommendations
 
 * Flask is single-threaded; not ideal for concurrent users.
 * Use `gunicorn` or `FastAPI` for production deployment.
