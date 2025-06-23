@@ -1,5 +1,4 @@
 
-````markdown
 # 🧬 Biomedical Abbreviation Detection using BioBERT
 
 This project focuses on detecting biomedical abbreviations and their corresponding long forms in scientific text using token classification techniques. Developed as part of the **COMM061 NLP module** at the **University of Surrey**, the system identifies abbreviations and expansions using transformer models and serves them through an interactive chatbot.
