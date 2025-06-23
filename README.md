@@ -1,11 +1,11 @@
 
 # 🧬 Biomedical Abbreviation Detection using BioBERT
 
-This project focuses on detecting biomedical abbreviations and their corresponding long forms in scientific text using token classification techniques. Developed as part of the **COMM061 NLP module** at the **University of Surrey**, the system identifies abbreviations and expansions using transformer models and serves them through an interactive chatbot.
+This project focuses on detecting biomedical abbreviations and their corresponding long forms in scientific text using token classification techniques. The system identifies abbreviations and expansions using transformer models and serves them through an interactive chatbot.
 
 ---
 
-## 📌 Problem Statement
+## Problem Statement
 
 Biomedical texts often contain complex abbreviations that vary in context and meaning. The goal of this project is to build a model that accurately tags abbreviations (AC) and long forms (LF) using BIO tagging format:
 - `B-AC` – Beginning of an abbreviation
@@ -15,7 +15,7 @@ Biomedical texts often contain complex abbreviations that vary in context and me
 
 ---
 
-## 🧪 Model Evaluation
+## Model Evaluation
 
 We tested two models using the [PLOD-CW-25](https://huggingface.co/datasets/surrey-nlp/PLOD-CW-25) dataset:
 
@@ -28,7 +28,7 @@ We tested two models using the [PLOD-CW-25](https://huggingface.co/datasets/surr
 
 ---
 
-## 📈 Additional Experiments
+## Additional Experiments
 
 - **Data Augmentation:** Trained BioBERT with increasing subsets (5%, 10%, 15%) of the [PLODv2-filtered](https://huggingface.co/datasets/surrey-nlp/PLODv2-filtered) dataset for better generalization.
 - **Loss Functions Tested:**
@@ -39,7 +39,7 @@ We tested two models using the [PLOD-CW-25](https://huggingface.co/datasets/surr
 
 ---
 
-## 🚀 Deployment
+## Deployment
 
 ### 🔗 Hosted Model
 Deployed on Hugging Face Hub:  
@@ -108,33 +108,6 @@ model = AutoModelForTokenClassification.from_pretrained("Lohit20/biobert-v1.2-ba
 * Add GPU support or use Hugging Face Inference API for scalability.
 * Use Redis queues + Celery for async request handling in production.
 
----
-
-## 📹 Demo Video
-
-A full demonstration video showcasing:
-
-* Training results
-* Model comparisons
-* Chatbot functionality
-* Individual contributions
-
-📁 *Submitted via SurreyLearn as part of coursework requirements.*
-
----
-
-## 👨‍💻 Contributors
-
-* **Lohit Ashwa Vaswani** – Deployment, UI, Logging
-* Amarjeet Sudhir Kushwaha – Dataset analysis, pre-processing
-* Shivam Kochhar – Model training, evaluation
-* Upasana Das – Experimentation with loss functions and tuning
-
----
-
-## 📄 License
-
-For academic use only under the COMM061 module, University of Surrey.
 
 ```
 
